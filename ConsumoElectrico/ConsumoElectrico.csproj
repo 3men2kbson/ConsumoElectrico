@@ -98,13 +98,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CargoFijo.cs" />
+    <Compile Include="Models\LecturaDistrib.cs" />
+    <Compile Include="Models\LecturaPropia.cs" />
     <Compile Include="Models\PrecioEnergia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Readme.md" />
+    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
