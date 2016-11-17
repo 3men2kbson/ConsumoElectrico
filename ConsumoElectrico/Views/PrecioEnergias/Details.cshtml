@@ -1,0 +1,74 @@
+﻿@model ConsumoElectrico.Models.PrecioEnergia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PrecioEnergia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PEDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PEDesde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEDesde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PEhasta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEhasta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PESinSubs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PESinSubs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PEConsubs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEConsubs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaActivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaActivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaLimite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaLimite)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PEId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
