@@ -12,6 +12,7 @@ namespace ConsumoElectrico.Models
         [DisplayName("Id")]
         public int CFId { get; set; }
         [DisplayName("Descripción")]
+        [StringLength(50)]
         public string CFDesc { get; set; }
         [DisplayName("Desde")]
         public int CFDesde { get; set; }
@@ -21,9 +22,13 @@ namespace ConsumoElectrico.Models
         public decimal CFSinSubs { get; set; }
         [DisplayName("Con Subsidio")]
         public decimal CFConSubs { get; set; }
+        [DataType(DataType.DateTime)]
         [DisplayName("Activo desde")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yy}")]
         public DateTime FechaActivo { get; set; }
+        [DataType(DataType.DateTime)]
         [DisplayName("Activo Hasta")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yy}")]
         public DateTime FechaLimite { get; set; }
 
     }
