@@ -122,6 +122,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CargoFijoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LecturaDistribController.cs" />
+    <Compile Include="Controllers\LecturaPropiaController.cs" />
     <Compile Include="Controllers\PrecioEnergiasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -151,6 +153,16 @@
     <Content Include="Views\PrecioEnergias\Details.cshtml" />
     <Content Include="Views\PrecioEnergias\Edit.cshtml" />
     <Content Include="Views\PrecioEnergias\Index.cshtml" />
+    <Content Include="Views\LecturaPropia\Create.cshtml" />
+    <Content Include="Views\LecturaPropia\Delete.cshtml" />
+    <Content Include="Views\LecturaPropia\Details.cshtml" />
+    <Content Include="Views\LecturaPropia\Edit.cshtml" />
+    <Content Include="Views\LecturaPropia\Index.cshtml" />
+    <Content Include="Views\LecturaDistrib\Create.cshtml" />
+    <Content Include="Views\LecturaDistrib\Delete.cshtml" />
+    <Content Include="Views\LecturaDistrib\Details.cshtml" />
+    <Content Include="Views\LecturaDistrib\Edit.cshtml" />
+    <Content Include="Views\LecturaDistrib\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

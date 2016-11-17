@@ -1,0 +1,34 @@
+﻿@model ConsumoElectrico.Models.LecturaDistrib
+
+@{
+    ViewBag.Title = "Details - Lectura Distribuidora";
+}
+
+<h2>Details - Lectura Distribuidora</h2>
+
+<div>
+    <h4>LecturaDistrib</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LDFecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LDFecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LDLectura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LDLectura)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LDId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

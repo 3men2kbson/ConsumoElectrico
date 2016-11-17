@@ -1,0 +1,42 @@
+﻿@model ConsumoElectrico.Models.LecturaPropia
+
+@{
+    ViewBag.Title = "Details - Lectura Propia";
+}
+
+<h2>Details - Lectura Propia</h2>
+
+<div>
+    <h4>LecturaPropia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LPFecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LPFecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LPLectura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LPLectura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LPSubsidio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LPSubsidio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LPId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
