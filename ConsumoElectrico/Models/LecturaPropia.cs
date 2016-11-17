@@ -9,6 +9,7 @@ namespace ConsumoElectrico.Models
 {
     public class LecturaPropia
     {
+        [Key]
         [DisplayName("Id")]
         public int LPId { get; set; }
         [DataType(DataType.DateTime)]

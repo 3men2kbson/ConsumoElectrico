@@ -9,6 +9,7 @@ namespace ConsumoElectrico.Models
 {
     public class LecturaDistrib
     {
+        [Key]
         [DisplayName("Id")]
         public int LDId { get; set;  }
         [DataType(DataType.DateTime)]

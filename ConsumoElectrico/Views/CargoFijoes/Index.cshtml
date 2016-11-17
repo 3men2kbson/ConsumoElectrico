@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ConsumoElectrico.Models.CargoFijo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CFDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CFDesde)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CFHasta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CFSinSubs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CFConSubs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaActivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaLimite)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CFDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CFDesde)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CFHasta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CFSinSubs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CFConSubs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaActivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaLimite)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CFId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CFId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CFId })
+        </td>
+    </tr>
+}
+
+</table>

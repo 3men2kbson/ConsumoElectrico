@@ -9,6 +9,7 @@ namespace ConsumoElectrico.Models
 {
     public class PrecioEnergia
     {
+        [Key]
         [DisplayName("Id")]
         public int PEId { get; set;  }
         [DisplayName("Descripción")]

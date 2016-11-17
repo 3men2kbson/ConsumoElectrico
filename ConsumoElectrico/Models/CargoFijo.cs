@@ -9,6 +9,7 @@ namespace ConsumoElectrico.Models
 {
     public class CargoFijo
     {
+        [Key]
         [DisplayName("Id")]
         public int CFId { get; set; }
         [DisplayName("Descripción")]

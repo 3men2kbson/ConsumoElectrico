@@ -1,0 +1,74 @@
+﻿@model ConsumoElectrico.Models.CargoFijo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CargoFijo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CFDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CFDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CFDesde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CFDesde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CFHasta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CFHasta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CFSinSubs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CFSinSubs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CFConSubs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CFConSubs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaActivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaActivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaLimite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaLimite)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CFId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
